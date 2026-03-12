@@ -48,6 +48,7 @@
   "scripts": {
     "build": "tsup && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "dev": "tsup --watch",
+    "prepare": "npm run build",
     "test": "npm run test:unit",
     "test:unit": "vitest run tests/unit",
     "test:integration": "vitest run tests/integration tests/integrations",
